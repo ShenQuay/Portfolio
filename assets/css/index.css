@@ -1,0 +1,45 @@
+#home {
+  grid-row: 1/2;
+  height: 120vh;
+}
+.slogan {
+  color: white;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 4vh;
+  font-family: Helvetica-Thin;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: default;
+}
+
+.logo {
+  text-align: left;
+  font-size: 5vh;
+  font-family: Helvetica-Bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: default;
+  transform: translate(-50%,-50%)
+}
+
+
+@media (min-width: 576px) { 
+ 
+
+  }
+
+@media (min-width: 768px) { 
+  
+  }
+
+@media (min-width: 992px) { 
+  
+  }
+
+@media (min-width: 1200px) { 
+ 
+  }

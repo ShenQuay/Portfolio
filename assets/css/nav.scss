@@ -1,0 +1,164 @@
+$navFullscreen-font-size: 3rem;
+$navFullscreen-line-height: $navFullscreen-font-size * 2;
+$navFullscreen-font-size-mobile: 2rem;
+$navFullscreen-line-height-mobile: $navFullscreen-font-size-mobile * 2;
+
+* 
+{
+	box-sizing: border-box;
+}
+
+.octo-logo {
+	opacity: 1;
+	position: fixed;
+	top: 6vh;
+	left: -7.6vh;
+	z-index: 9000;
+	width: 35vh;
+	mix-blend-mode: difference;
+}
+
+#hamburger {
+	opacity: 1;
+	position: fixed;
+	top: 17vh;
+	left: 5.3vh;
+	z-index: 9000;
+	width: 4vh;
+	height: 2.5vh;
+	mix-blend-mode: difference;
+	&:hover{
+		cursor: pointer;
+	}
+}
+.hamburger__line {
+	content: " ";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: white;
+	border-radius: 1px;
+	margin-bottom: 5px;
+	
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.hamburger--steps .hamburger__line {
+	transition: width 0.12s ease-in-out;
+	
+	&:nth-child(2){
+		width: 80%;
+	}
+	&:last-child{
+		width: 55%;
+	}
+}
+	.hamburger--steps-right .hamburger__line {
+		float: right;
+	}
+	.hamburger--steps:hover .hamburger__line {
+		width: 100%;
+	}
+
+
+.nav-fullscreen__item {
+	font-weight: 800;
+	font-size: 9vh;
+	margin-left: 5vh;
+	margin-top: 1vh;
+	text-align: left;
+}
+.nav-fullscreen {
+    position: fixed;
+	display: flex;
+    z-index: 800;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	opacity: 0;
+	visibility: hidden;
+    justify-content: left;
+    align-items: center;
+    background-color: black; 
+	transition: opacity 0.2s, visibility 1s;
+
+	&--open {
+	opacity: 1;
+	visibility: visible;
+    }
+    
+	&__items {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		font-size: $navFullscreen-font-size;
+		line-height: $navFullscreen-line-height;
+		animation: fadeInDown 0.25s ease-in-out;
+        
+		@media(max-width: 375px) {
+			font-size: $navFullscreen-font-size-mobile;
+			line-height: $navFullscreen-line-height-mobile;
+		}
+    }
+    
+		&__item {
+			a {
+				text-decoration: none;        
+				color: white;
+				transition: color 0.1s ease-in-out;
+
+				&:hover
+				{
+					color: #CCCCCC;
+				}
+			}
+		}
+    
+}
+
+
+@keyframes fadeInDown {
+  from 
+  	{
+		opacity: 0;
+		transform: translate3d(0, -30%, 0);
+ 	}
+
+  to 
+  	{
+		opacity: 1;
+		transform: none;
+  	}
+}
+
+@keyframes fadeOutUp 
+{
+  from 
+  	{
+		opacity: 1;
+		transform: none;
+  	}
+
+  to 
+  	{
+		opacity: 0;
+		transform: translate3d(0, -30%, 0);
+ 	}
+}
+
+@keyframes fadeIn 
+{
+  from 
+  	{
+   	 opacity: 0;
+  	}
+
+  to 
+  	{
+    	opacity: 1;
+  	}
+}

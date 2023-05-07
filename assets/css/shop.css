@@ -1,0 +1,50 @@
+#shop {
+    grid-row: 2/3;
+    padding-bottom: 80vh;
+    padding-top: 1vh;
+    display: grid;
+    place-items: center;
+}
+
+.shop-elements-background {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.shop-elements ul {
+    list-style-type:none;
+    text-align: center;
+    margin-left: -6vh;
+}
+
+.shop-elements li {
+    width: 100vw;
+}
+
+.shop-elements ul li {
+    padding-bottom: 7vh;
+    font-size: 8vw;
+}
+
+.shop-elements a {
+    text-decoration: none;
+    color:white;
+}
+
+.shop-elements ul:hover li {
+    opacity: 15%;
+}
+
+.shop-elements ul li:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+

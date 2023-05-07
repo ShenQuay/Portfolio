@@ -1,0 +1,41 @@
+
+@font-face {
+  src: url(../fonts/Helvetica.otf);
+  font-family: Helvetica;
+}
+
+@font-face {
+  src: url(../fonts/HelveticaNeueLTStd-UltLt.otf);
+  font-family: Helvetica-Thin;
+}
+
+@font-face {
+  src: url(../fonts/Helvetica-Bold.otf);
+  font-family: Helvetica-Bold;
+}
+
+@font-face {
+  src: url(../fonts/HelveticaNeueLTStd-BdOu.otf);
+  font-family: Helvetica-Bold-Outline;
+}
+
+@font-face {
+  src: url(../fonts/HelveticaLTStd-BlkCondObl.otf);
+  font-family: Helvetica-Bold-Oblique;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white; 
+  color: black;
+  font-family: Helvetica;
+  overflow-x: hidden;
+}
+
+#all {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  place-items: bottom;
+  overflow-x: hidden;
+}

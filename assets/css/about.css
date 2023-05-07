@@ -1,0 +1,153 @@
+
+#about {
+    grid-row: 4/5;
+}
+.about-ul {
+    list-style: none;
+    text-align: center;
+}
+
+.about-ul li {
+    color: black;
+    cursor: default;
+}
+
+#about-image {
+    position: relative;
+    width: 75%;
+    height: auto;
+    z-index: 1;
+}
+
+.about-text {
+    position: relative;
+}
+
+#abt-txt-size {
+    font-family: Helvetica-Bold;
+    text-align: center;
+}
+
+.philosophy {
+    margin-top: -4vh;
+    grid-row: 5/6;
+    font-family:Helvetica-Bold-Outline;
+    color: black;
+    background-color: white;
+    white-space: nowrap;
+    padding-bottom: 10vh;
+}
+
+.line {
+    opacity: 0;
+    font-size: 5vw;
+    cursor: default;
+    margin-left: 2vh;
+}
+
+@media (min-width: 360px) { 
+
+    .about-text {
+        top: -10vh;
+    }
+
+    #abt-txt-size {
+        font-size: 8vh;
+        text-align: center;
+    }
+
+    .philosophy {
+       padding-top: 100px;
+    }
+}
+
+@media (min-width: 768px) { 
+
+    .about-text {
+        top: -20vh;
+    }
+
+    #abt-txt-size {
+        font-size: 12vh;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 992px) { 
+
+    .about-text {
+        top: -20vh;
+    }
+
+    #abt-txt-size {
+        font-size: 14vh;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1200px) { 
+
+    .about-text {
+        top: -25vh;
+    }
+
+    #abt-txt-size {
+        font-size: 16vh;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1311px) { 
+
+    .about-text {
+        top: -25vh;
+    }
+
+    #abt-txt-size {
+        font-size: 16vh;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px) { 
+
+    .about-text {
+        top: -25vh;
+    }
+
+    #abt-txt-size {
+        font-size: 16vh;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1524px) { 
+
+    .about-text {
+        top: -25vh;
+    }
+
+    #abt-txt-size {
+        font-size: 16vh;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1621px) { 
+
+}
+
+@media (min-width: 1683px) { 
+
+    .about-text {
+        top: -25vh;
+    }
+
+    #abt-txt-size {
+        font-size: 16vh;
+        text-align: center;
+    }
+
+    
+}
